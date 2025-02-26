@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+button {
+    background: rgb(46, 46, 126);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border: #333;
+    border-width: 1px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 8px;
+    height: auto;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 80%;
+    }
+}
