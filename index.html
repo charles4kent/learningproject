@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="card.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="hero">
+            <h1 class="welcome-text">Welcome, I'm Charles</h1>
+        </div>
         <h1>Your Name</h1>
         <p>UX Designer & Developer</p>
     </header>
@@ -21,19 +27,89 @@
      
         <h2>Projects</h2>
         <div class="container">
-            <div class="box">Project 1</div>
-            <div class="box">Project 2</div>
-            <div class="box">Project 3</div>
+            <div class="box">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="Card Image" class="card-img">
+
+                <div class="cardbody">                
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Project 1</h4>
+                    placeholder body text
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="Card Image" class="card-img">
+
+                <div class="cardbody">                
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Project 2</h4>
+                    placeholder body text
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="Card Image" class="card-img">
+
+                <div class="cardbody">                
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Project 3</h4>
+                    placeholder body text
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="Card Image" class="card-img">
+                <div class="cardbody">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Project 4</h4>
+                    placeholder body text
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="Card Image" class="card-img">
+                <div class="cardbody">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Project 5</h4>
+                    placeholder body text
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="Card Image" class="card-img">
+                <div class="cardbody">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Project 6</h4>
+                    placeholder body text
+                </div>
+            </div>
+        </div>
+    </section>
+        <h2>To-Do List</h2>
+        <div class="inputGroup">
+            <label for=taskInput>Task:</label>
+            <div class="inputButton">
+                <input type="text" id="taskInput" placeholder="Enter a task">
+                <button onclick="addTask()"><span class="buttonText">Add Task</span></button>
+                <button class="secondaryButton" onclick="clearTasks()"><span class="secondarybuttonText">Clear Tasks</span></button>
+            </div>
         </div>
 
+        <ul id="taskList"></ul>
+        <input type="number" id="numberInput" placeholder="Enter a number">
+
+    <section>
+
+
+
     </section>
-    
     <footer>
+        <p id="message">Click the button to change this text.</p>
+        <button onclick="changeText()">Change Text</button>
         <button>Contact Me</button>
     </footer>
     
     
     
+    <script src="script.js"></script>
+
 </body>
 
 </html>
